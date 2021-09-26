@@ -1,38 +1,133 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #131313;
+  color: #e9ebee
+}
+
+.Navbar{
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.netflix {
+  height: 5ex;
+  width: 150;
+  
+}
+
+/*.selectone{
   text-align: center;
-}
+}*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.min-div{
+  width: 100vw;
+  height: 80vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.min-div h1{
+  font-size: 3.8rem;
+  letter-spacing: 0;
+  font-size: 500;
+  color: #ffff;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Memberdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 0;
+}
+
+.Memberdiv .btn{
+  height: 10vw;
+  min-height: 8.4rem;
+  max-height: 20rem;
+  width: 10vw;
+  min-width: 8.4rem;
+  max-width: 20rem;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  margin-top: 3rem;
+  margin-right: 2.5rem;
+  position: relative;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.Memberdiv .btn:nth-child(1){
+  background-image: url(./Logo/nnn.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Memberdiv .btn:nth-child(2){
+  background-image: url(./Logo/m.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Memberdiv .btn:nth-child(3){
+  background-image: url(./Logo/d.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Memberdiv .btn:nth-child(4){
+  background-image: url(./Logo/b.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Memberdiv .btn:nth-child(5){
+  background-image: url(./Logo/k.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Memberdiv .btn:hover{
+  box-shadow: inset 0 0 0 5px rgb(255, 255,255 , 0.9);
+}
+
+.Memberdiv .btn span{
+  width: inherit;
+  /*background-color: red;*/
+  position: absolute;
+  bottom: -4rem;
+  left: 0;
+  text-transform: capitalize;
+  color: rgb(153, 153, 153);
+  
+}
+
+.mnProfile {
+  border: 1px solid gray;
+  color: gray;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  margin-top: 5rem;
+  background-color: transparent;
+  cursor: pointer;
+  
+}
+
+.mnProfile:hover{
+  border: 1px solid #ffff;
+  color: #ffff;
 }

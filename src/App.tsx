@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar';
+import Nattadudu from './Nattadudu'
+import Mom from './Mom'
+import Boss from './Boss'
+import Dee from './Dee'
+import Kids from './Kids'
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Navbar/>
+       
+       <div className ="min-div">
+         <h1>เลือกผู้ชม</h1>
+      <div className="Memberdiv">
+         <button className="btn" ><span><Nattadudu/></span></button>
+         <button className="btn"><span><Mom/></span></button>
+         <button className="btn"><span><Dee/></span></button>
+         <button className="btn"><span><Boss/></span></button>
+         <button className="btn"><span><Kids/></span></button>
+      </div>
+       <button className="mnProfile">จัดการโปรไฟล์</button>
+       </div>
     </div>
   );
 }
