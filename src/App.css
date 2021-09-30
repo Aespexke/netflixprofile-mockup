@@ -44,8 +44,13 @@ body {
   
 }
 
+.a {
+  display: flex;
+}
+
 .Memberdiv{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -67,36 +72,6 @@ body {
   position: relative;
   cursor: pointer;
   background-size: cover;
-}
-
-.Memberdiv .btn:nth-child(1){
-  background-image: url(./Logo/nnn.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.Memberdiv .btn:nth-child(2){
-  background-image: url(./Logo/m.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.Memberdiv .btn:nth-child(3){
-  background-image: url(./Logo/d.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.Memberdiv .btn:nth-child(4){
-  background-image: url(./Logo/b.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.Memberdiv .btn:nth-child(5){
-  background-image: url(./Logo/k.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .Memberdiv .btn:hover{
