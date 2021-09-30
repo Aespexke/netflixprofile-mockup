@@ -16,11 +16,13 @@ const App = () => {
 
     sortedUser.forEach(() => {
       sortedUser.forEach((z, j) => {
-        if (sortedUser[j].name > sortedUser[j + 1].name) {
-          let temp = sortedUser[j];
-          sortedUser[j] = sortedUser[j + 1];
-          sortedUser[j + 1] = temp;
-          setUsers(sortedUser);
+        if (j + 1 < sortedUser.length) {
+          if (sortedUser[j].name > sortedUser[j + 1].name) {
+            let temp = sortedUser[j];
+            sortedUser[j] = sortedUser[j + 1];
+            sortedUser[j + 1] = temp;
+            setUsers([...sortedUser]);
+          }
         }
       });
     });
